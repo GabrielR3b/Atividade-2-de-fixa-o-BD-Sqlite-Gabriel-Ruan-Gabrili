@@ -39,4 +39,8 @@ INSERT INTO aluno_disciplina (aluno_id, disciplina_id)
 INSERT INTO aluno_disciplina (aluno_id, disciplina_id)
 	VALUES (4, 2);
 
-	
+INSERT INTO alunos (nome, turma_id)
+VALUES ('Eduardo', 999);	
+
+INSERT INTO carteirinhas (numero, aluno_id)
+VALUES ('CT999', 1);
