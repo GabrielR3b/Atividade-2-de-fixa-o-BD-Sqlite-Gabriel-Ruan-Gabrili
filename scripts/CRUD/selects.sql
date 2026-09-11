@@ -104,3 +104,23 @@ AVG(valor) AS media,
 MIN(valor) AS menor,
 MAX(valor) AS maior
 FROM tabela;
+
+SELECT nome
+FROM alunos
+WHERE turma_id = 1
+ORDER BY nome ASC;
+
+SELECT nome
+FROM alunos
+WHERE turma_id = 2
+ORDER BY nome ASC;
+
+SELECT 
+    alunos.nome AS aluno,
+    disciplinas.nome AS disciplina
+FROM alunos
+JOIN aluno_disciplina
+    ON alunos.id = aluno_disciplina.aluno_id
+JOIN disciplinas
+    ON disciplinas.id = aluno_disciplina.disciplina_id
+ORDER BY alunos.nome ASC, disciplinas.nome ASC;
